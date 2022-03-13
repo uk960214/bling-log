@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "bling-log",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "Bling-log under construction",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Bling <uk960214@gmail.com>",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
@@ -25,6 +25,7 @@
     "gatsby-source-filesystem": "^4.9.0",
     "gatsby-transformer-remark": "^5.9.0",
     "gatsby-transformer-sharp": "^4.9.0",
+    "gh-pages": "^3.2.3",
     "prismjs": "^1.27.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -35,14 +36,14 @@
   "devDependencies": {
     "prettier": "^2.5.1"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://uk960214.github.com/bling-log/",
   "keywords": [
     "gatsby"
   ],
   "license": "0BSD",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/uk960214/bling-log/"
   },
   "scripts": {
     "build": "gatsby build",
@@ -51,6 +52,8 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d public"
   }
 }
