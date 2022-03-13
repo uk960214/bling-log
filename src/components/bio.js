@@ -32,7 +32,7 @@ const Bio = () => {
 
   return (
     <div className="bio">
-      <StaticImage
+      {/* <StaticImage
         className="bio-avatar"
         layout="fixed"
         formats={["auto", "webp", "avif"]}
@@ -41,8 +41,8 @@ const Bio = () => {
         height={50}
         quality={95}
         alt="Profile picture"
-      />
-      {author?.name && (
+      /> */}
+      {/* {author?.name && (
         <p>
           Written by <strong>{author.name}</strong> {author?.summary || null}
           {` `}
@@ -50,7 +50,8 @@ const Bio = () => {
             You should follow them on Twitter
           </a>
         </p>
-      )}
+      )} */}
+      <p>🚧 Under construction - 공사중 🚧</p>
     </div>
   )
 }
